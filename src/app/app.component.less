@@ -1,0 +1,35 @@
+.battlefield-wrap {
+    margin-top: 40px;
+}
+.battlefield {
+    width: 400px;
+    .col {
+        position: relative;
+        border: 1px solid #fff;
+        height: 40px;
+        background-color: #bebebe;
+        &.has-ship {
+            background-color: #000
+        }
+        &.miss {
+            background-color: yellow
+        }
+        &.hit {
+            background-color: red;
+        }
+    }
+    .cords {
+        width: 40px;
+        height: 40px;
+        padding: 9px;
+        &.absolute {
+            position: absolute;
+            top: -40px;
+            left: 0;
+        }
+    }
+}
+.fight-log {
+    max-height: 400px;
+    overflow-y: auto;
+}
